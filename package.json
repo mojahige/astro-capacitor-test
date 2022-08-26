@@ -8,12 +8,22 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "eslint --cache src",
+    "lint:fix": "yarn eslint --fix",
+    "format": "prettier --write --cache src"
   },
   "devDependencies": {
     "@astrojs/solid-js": "^1.0.0",
     "@astrojs/tailwind": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.35.1",
+    "@typescript-eslint/parser": "^5.35.1",
     "astro": "^1.0.9",
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-solid": "^0.7.1",
+    "prettier": "^2.7.1",
     "solid-js": "^1.5.1"
   }
 }
