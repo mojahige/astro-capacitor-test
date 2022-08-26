@@ -460,7 +460,7 @@ __metadata:
     "@astrojs/solid-js": ^1.0.0
     "@astrojs/tailwind": ^1.0.0
     astro: ^1.0.9
-    solid-js: ^1.4.3
+    solid-js: ^1.5.1
   languageName: unknown
   linkType: soft
 
@@ -4456,7 +4456,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"solid-js@npm:^1.4.3":
+"solid-js@npm:^1.5.1":
   version: 1.5.1
   resolution: "solid-js@npm:1.5.1"
   dependencies:
