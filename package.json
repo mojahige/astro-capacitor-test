@@ -1,5 +1,5 @@
 {
-  "name": "@example/basics",
+  "name": "astro-capacitor-app",
   "version": "0.0.1",
   "private": true,
   "packageManager": "yarn@3.2.3",
@@ -15,11 +15,14 @@
     "lint": "eslint --cache src",
     "lint:fix": "yarn eslint --fix",
     "format": "prettier --write --cache src",
-    "test": "uvu -r solid-register -r module-alias/register"
+    "test": "uvu -r solid-register -r module-alias/register",
+    "cap:sync": "cap sync",
+    "cap:open:android": "cap open android"
   },
   "devDependencies": {
     "@astrojs/solid-js": "^1.0.0",
     "@astrojs/tailwind": "^1.0.0",
+    "@capacitor/cli": "^4.1.0",
     "@typescript-eslint/eslint-plugin": "^5.35.1",
     "@typescript-eslint/parser": "^5.35.1",
     "astro": "^1.0.9",
@@ -34,5 +37,9 @@
     "solid-register": "^0.2.5",
     "solid-testing-library": "^0.3.0",
     "uvu": "^0.5.6"
+  },
+  "dependencies": {
+    "@capacitor/android": "^4.1.0",
+    "@capacitor/core": "^4.1.0"
   }
 }
