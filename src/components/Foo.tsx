@@ -1,6 +1,6 @@
 import { createSignal, ParentProps } from "solid-js";
 
-type Props = ParentProps<{}>;
+type Props = ParentProps;
 
 export function Counter(props: Props) {
   const [count, setCount] = createSignal(0);
