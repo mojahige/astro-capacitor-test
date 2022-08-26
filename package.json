@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "packageManager": "yarn@3.2.3",
+  "_moduleAliases": {
+    "~": "src"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -12,7 +15,7 @@
     "lint": "eslint --cache src",
     "lint:fix": "yarn eslint --fix",
     "format": "prettier --write --cache src",
-    "test": "uvu -r solid-register"
+    "test": "uvu -r solid-register -r module-alias/register"
   },
   "devDependencies": {
     "@astrojs/solid-js": "^1.0.0",
@@ -25,6 +28,7 @@
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-solid": "^0.7.1",
     "jsdom": "^20.0.0",
+    "module-alias": "^2.2.2",
     "prettier": "^2.7.1",
     "solid-js": "^1.5.1",
     "solid-register": "^0.2.5",
