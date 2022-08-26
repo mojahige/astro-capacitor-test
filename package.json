@@ -11,7 +11,8 @@
     "astro": "astro",
     "lint": "eslint --cache src",
     "lint:fix": "yarn eslint --fix",
-    "format": "prettier --write --cache src"
+    "format": "prettier --write --cache src",
+    "test": "uvu -r solid-register"
   },
   "devDependencies": {
     "@astrojs/solid-js": "^1.0.0",
@@ -23,7 +24,11 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-solid": "^0.7.1",
+    "jsdom": "^20.0.0",
     "prettier": "^2.7.1",
-    "solid-js": "^1.5.1"
+    "solid-js": "^1.5.1",
+    "solid-register": "^0.2.5",
+    "solid-testing-library": "^0.3.0",
+    "uvu": "^0.5.6"
   }
 }
