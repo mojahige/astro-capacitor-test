@@ -32,6 +32,7 @@
     "eslint-plugin-solid": "^0.7.1",
     "jsdom": "^20.0.0",
     "module-alias": "^2.2.2",
+    "postcss-import": "^14.1.0",
     "prettier": "^2.7.1",
     "solid-js": "^1.5.1",
     "solid-register": "^0.2.5",
