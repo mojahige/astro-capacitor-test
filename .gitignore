@@ -28,5 +28,6 @@ pnpm-debug.log*
 !.yarn/sdks
 !.yarn/versions
 
-# ESLint
+# Caches
 .eslintcache
+.stylelintcache
