@@ -1,5 +1,6 @@
 ---
 import "~/styles/main.css";
+import Frame from "./Frame.astro";
 import { Header } from "~/components/Header";
 
 export interface Props {
@@ -20,14 +21,10 @@ const { title } = Astro.props as Props;
   </head>
 
   <body>
-    <div class="frame bg-gray-200 dark:bg-slate-800 text-black dark:text-white">
-      <header>
-        <Header title={title} />
-      </header>
-      <main class="frame-main">
-        <slot />
-      </main>
-      <footer>footer</footer>
-    </div>
+    <Frame>
+      <Header title={title} slot="header" />
+      <slot slot="main" />
+      <p slot="footer">footer</p>
+    </Frame>
   </body>
 </html>
