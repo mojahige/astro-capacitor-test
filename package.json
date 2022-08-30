@@ -1,5 +1,5 @@
 {
-  "name": "astro-capacitor-app",
+  "name": "astro-capacitor-test",
   "version": "0.0.1",
   "private": true,
   "packageManager": "yarn@3.2.3",
