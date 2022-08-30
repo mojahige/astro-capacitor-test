@@ -2,7 +2,7 @@ import { test } from "uvu";
 import * as assert from "uvu/assert";
 import { cleanup, screen, render, fireEvent } from "solid-testing-library";
 import { isInDom } from "~/helper/test";
-import { Counter } from "./";
+import { Counter } from ".";
 
 test.after.each(cleanup);
 

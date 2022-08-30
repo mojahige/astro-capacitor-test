@@ -1,4 +1,5 @@
 import { createSignal, ParentProps } from "solid-js";
+import { Button } from "~/components/Button";
 
 type Props = ParentProps;
 
@@ -10,13 +11,13 @@ export function Counter(props: Props) {
 
   return (
     <>
-      <div class="flex">
-        <button onClick={subtract}>-</button>
-        <pre>{count()}</pre>
-        <button onClick={add}>+</button>
-      </div>
+      <p class="text-center">{props.children}</p>
+      <p class="text-center text-xl font-bold">{count()}</p>
+      <div class="flex justify-center gap-8">
+        <Button onClick={subtract}>-</Button>
 
-      <div>{props.children}</div>
+        <Button onClick={add}>+</Button>
+      </div>
     </>
   );
 }

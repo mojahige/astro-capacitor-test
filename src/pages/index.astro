@@ -1,9 +1,8 @@
 ---
 import Layout from "~/layouts/Layout.astro";
-import { Counter } from "~/components/Foo";
+import { Counter } from "~/components/Counter";
 ---
 
 <Layout title="Welcome to Astro.">
-  <Counter client:visible>Foo!!!</Counter>
-  <p>hoge</p>
+  <Counter client:load>Counter Component</Counter>
 </Layout>
